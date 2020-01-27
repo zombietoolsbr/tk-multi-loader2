@@ -219,9 +219,9 @@ class MayaActions(HookBaseClass):
 
         pm.system.createReference(
             path,
-            loadReferenceDepth="all",
+            groupReference=True,
             mergeNamespacesOnClash=True,
-            namespace=namespace,
+            namespace=":",
         )
 
     def _do_import(self, path, sg_publish_data):
