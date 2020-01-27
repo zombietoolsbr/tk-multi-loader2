@@ -220,7 +220,7 @@ class MayaActions(HookBaseClass):
         pm.system.createReference(
             path,
             loadReferenceDepth="all",
-            mergeNamespacesOnClash=False,
+            mergeNamespacesOnClash=True,
             namespace=namespace,
         )
 
