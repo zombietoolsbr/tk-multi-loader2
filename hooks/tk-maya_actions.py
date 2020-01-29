@@ -219,7 +219,6 @@ class MayaActions(HookBaseClass):
 
         pm.system.createReference(
             path,
-            groupReference=True,
             mergeNamespacesOnClash=True,
             namespace=":",
         )
